@@ -1,0 +1,5 @@
+serializerx/
+projects/*
+
+!projects/serializerx.vcxproj
+!projects/serializerx.vcxproj.filters

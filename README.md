@@ -1,0 +1,3 @@
+# serializerx
+
+Base serializer.
