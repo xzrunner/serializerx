@@ -8,6 +8,8 @@
     <ClCompile Include="..\..\..\source\GlyphStyleID.cpp">
       <Filter>glyph</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\source\ResourceUID.cpp" />
+    <ClCompile Include="..\..\..\source\StringHelper.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\include\sx\ResFileHelper.h" />
@@ -17,10 +19,15 @@
     <ClInclude Include="..\..\..\include\sx\GlyphStyleID.h">
       <Filter>glyph</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\include\sx\ResourceUID.h" />
+    <ClInclude Include="..\..\..\include\sx\StringHelper.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="glyph">
       <UniqueIdentifier>{3527073e-1166-4dfb-9fd6-afbcfc2658ee}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\include\sx\StringHelper.inl" />
   </ItemGroup>
 </Project>
