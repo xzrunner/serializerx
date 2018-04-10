@@ -1,5 +1,7 @@
 #include "sx/StringHelper.h"
 
+#include <boost/locale/encoding.hpp>
+
 namespace sx
 {
 
@@ -14,6 +16,16 @@ void StringHelper::Split(const std::string& src, const std::string& mid, std::ve
 		p = strtok(nullptr, mid.c_str());
 	}
 	delete[] cstr;
+}
+
+std::string StringHelper::UTF8ToGBK(const char* str)
+{
+	return boost::locale::conv::from_utf(str, "GBK");
+}
+
+std::string StringHelper::GBKToUTF8(const char* str)
+{
+	return boost::locale::conv::to_utf<char>(str, "GBK");
 }
 
 }

@@ -18,6 +18,9 @@ public:
 	template<typename T>
 	static std::string ToStringWithPrecision(const T& d, const int n = 6);
 
+	static std::string UTF8ToGBK(const char* str);
+	static std::string GBKToUTF8(const char* str);
+
 }; // StringHelper
 
 }
