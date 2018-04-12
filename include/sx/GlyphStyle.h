@@ -18,9 +18,11 @@ public:
 	int edge_size;
 	pt2::GradientColor edge_color;
 
+	float line_x;
+
 public:
 	GlyphStyle();
-	GlyphStyle(const gtxt_glyph_style* gs);
+	GlyphStyle(const gtxt_glyph_style* gs, float line_x);
 
 	bool operator == (const GlyphStyle& style) const;
 

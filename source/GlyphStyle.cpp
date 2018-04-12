@@ -50,14 +50,16 @@ GlyphStyle::GlyphStyle()
 	, font_size(-1)
 	, edge(-1)
 	, edge_size(-1)
+	, line_x(0)
 {
 }
 
-GlyphStyle::GlyphStyle(const gtxt_glyph_style* gs)
+GlyphStyle::GlyphStyle(const gtxt_glyph_style* gs, float line_x)
 	: font(gs->font)
 	, font_size(gs->font_size)
 	, edge(gs->edge)
 	, edge_size(static_cast<int>(gs->edge_size))
+	, line_x(line_x)
 {
 	CopyColor(font_color, gs->font_color);
 	CopyColor(edge_color, gs->edge_color);
@@ -70,7 +72,8 @@ bool GlyphStyle::operator == (const GlyphStyle& style) const
 		&& font_color == style.font_color
 		&& edge       == style.edge
 		&& edge_size  == style.edge_size
-		&& edge_color == style.edge_color;
+		&& edge_color == style.edge_color
+		&& line_x     == style.line_x;
 }
 
 }

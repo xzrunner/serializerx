@@ -50,6 +50,7 @@ size_t GlyphStyleID::Hash(const GlyphStyle& gs)
 		boost::hash_combine(hash, gs.edge_size);
 		HashColor(hash, gs.edge_color);
 	}
+	boost::hash_combine(hash, gs.line_x);
 	return hash;
 }
 
