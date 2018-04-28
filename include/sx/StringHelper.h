@@ -21,6 +21,8 @@ public:
 	static std::string UTF8ToGBK(const char* str);
 	static std::string GBKToUTF8(const char* str);
 
+	static std::string Format(const std::string str, ...);
+
 }; // StringHelper
 
 }
