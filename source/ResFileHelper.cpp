@@ -13,6 +13,8 @@ ResFileType ResFileHelper::Type(const std::string& filepath)
 		type = FILE_IMAGE;
 	} else if (ext == ".json") {
 		type = FILE_JSON;
+	} else if (ext == ".param") {
+		type = FILE_PARAM;
 	}
 	return type;
 }
