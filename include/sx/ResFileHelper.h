@@ -10,7 +10,7 @@ enum ResFileType
 	FILE_UNKNOWN = 0,
 	FILE_IMAGE,
 	FILE_JSON,
-	FILE_PARAM,
+	FILE_MODEL,
 };
 
 class ResFileHelper
