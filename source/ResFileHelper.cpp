@@ -9,7 +9,7 @@ ResFileType ResFileHelper::Type(const std::string& filepath)
 {
 	ResFileType type = FILE_UNKNOWN;
 	auto ext = boost::filesystem::extension(filepath);
-	if (ext == ".png" || ext == ".jpg" || ext == ".bmp" || ext == ".ppm" || ext == ".pvr" || ext == ".pkm") {
+	if (ext == ".png" || ext == ".jpg" || ext == ".bmp" || ext == ".ppm" || ext == ".pvr" || ext == ".pkm" || ext == ".dds") {
 		type = FILE_IMAGE;
 	} else if (ext == ".json") {
 		type = FILE_JSON;
