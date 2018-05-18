@@ -7,10 +7,10 @@ namespace sx
 
 enum ResFileType
 {
-	FILE_UNKNOWN = 0,
-	FILE_IMAGE,
-	FILE_JSON,
-	FILE_MODEL,
+	RES_FILE_UNKNOWN = 0,
+	RES_FILE_IMAGE,
+	RES_FILE_JSON,
+	RES_FILE_MODEL,
 };
 
 class ResFileHelper
