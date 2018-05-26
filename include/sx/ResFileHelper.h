@@ -11,6 +11,7 @@ enum ResFileType
 	RES_FILE_IMAGE,
 	RES_FILE_JSON,
 	RES_FILE_MODEL,
+	RES_FILE_BIN,
 };
 
 class ResFileHelper
