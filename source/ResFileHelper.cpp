@@ -15,6 +15,8 @@ ResFileType ResFileHelper::Type(const std::string& filepath)
 		type = RES_FILE_JSON;
 	} else if (ext == ".param" || ext == ".obj" || ext == ".m3d" || ext == ".X") {
 		type = RES_FILE_MODEL;
+	} else if (ext == ".bin") {
+		type = RES_FILE_BIN;
 	}
 	return type;
 }
