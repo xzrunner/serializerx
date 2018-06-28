@@ -12,6 +12,9 @@ enum ResFileType
 	RES_FILE_JSON,
 	RES_FILE_MODEL,
 	RES_FILE_BIN,
+
+	// quake
+	RES_FILE_WAD = 1024,
 };
 
 class ResFileHelper
