@@ -15,6 +15,7 @@ enum ResFileType
 
 	// quake
 	RES_FILE_WAD = 1024,
+	RES_FILE_MAP,
 };
 
 class ResFileHelper

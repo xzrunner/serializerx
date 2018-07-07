@@ -22,6 +22,8 @@ ResFileType ResFileHelper::Type(const std::string& filepath)
 	// quake
 	else if (ext == ".wad") {
 		type = RES_FILE_WAD;
+	} else if (ext == ".map") {
+		type = RES_FILE_MAP;
 	}
 	return type;
 }
