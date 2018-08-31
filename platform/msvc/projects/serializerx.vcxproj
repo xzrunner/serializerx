@@ -15,17 +15,12 @@
     <ClInclude Include="..\..\..\include\sx\GlyphStyleID.h" />
     <ClInclude Include="..\..\..\include\sx\ResFileHelper.h" />
     <ClInclude Include="..\..\..\include\sx\ResourceUID.h" />
-    <ClInclude Include="..\..\..\include\sx\StringHelper.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\GlyphStyle.cpp" />
     <ClCompile Include="..\..\..\source\GlyphStyleID.cpp" />
     <ClCompile Include="..\..\..\source\ResFileHelper.cpp" />
     <ClCompile Include="..\..\..\source\ResourceUID.cpp" />
-    <ClCompile Include="..\..\..\source\StringHelper.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\..\include\sx\StringHelper.inl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectName>3.serializerx</ProjectName>
