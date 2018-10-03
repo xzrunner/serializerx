@@ -18,6 +18,8 @@ ResFileType ResFileHelper::Type(const std::string& filepath)
 		type = RES_FILE_MODEL;
 	} else if (ext == ".bin") {
 		type = RES_FILE_BIN;
+	} else if (ext == ".lua") {
+		type = RES_FILE_SCRIPT;
 	}
 	// quake
 	else if (ext == ".wad") {
