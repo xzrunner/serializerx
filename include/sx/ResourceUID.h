@@ -1,6 +1,7 @@
 #pragma once
 
 #include <cstdint>
+#include <string>
 
 namespace sx
 {
@@ -12,14 +13,17 @@ class GlyphStyle;
 class ResourceUID
 {
 public:
-	enum Type
+	enum class KeyType
 	{
-		RES_UNKNOWN = 0,
-		RES_GLYPH   = 1,
+		GLYPH = 0,
+		STRING,
+		TEX_QUAD,
 	};
 
 public:
 	static UID Glyph(int unicode, const GlyphStyle& gs);
+	static UID String(const std::string& str);
+	static UID TexQuad(size_t tex_id, int xmin, int ymin, int xmax, int ymax);
 
 private:
 	static const int DATA_SIZE = 56;
@@ -28,7 +32,7 @@ private:
 	static const uint64_t TYPE_MASK = 0xff00000000000000;
 
 private:
-	static UID Compose(uint64_t data, Type type);
+	static UID Compose(uint64_t data, KeyType type);
 
 }; // ResourceUID
 
