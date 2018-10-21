@@ -59,7 +59,7 @@ void GlyphStyleID::HashColor(size_t& seed, const pt2::GradientColor& color)
 	if (color.items.empty()) {
 		return;
 	}
-	if (color.items.size() == 1) 
+	if (color.items.size() == 1)
 	{
 		boost::hash_combine(seed, color.items[0].col.ToRGBA());
 	}

@@ -67,7 +67,7 @@ GlyphStyle::GlyphStyle(const gtxt_glyph_style* gs, float line_x)
 
 bool GlyphStyle::operator == (const GlyphStyle& style) const
 {
-	return font       == style.font 
+	return font       == style.font
 		&& font_size  == style.font_size
 		&& font_color == style.font_color
 		&& edge       == style.edge

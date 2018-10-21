@@ -28,7 +28,7 @@ private:
 	std::vector<std::pair<GlyphStyle, int>> m_hash[HASH_CAP];
 
  	std::pair<GlyphStyle, int> m_last;
-	
+
 	CU_SINGLETON_DECLARATION(GlyphStyleID)
 
 }; // GlyphStyleID
