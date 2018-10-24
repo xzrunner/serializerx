@@ -14,7 +14,7 @@ ResFileType ResFileHelper::Type(const std::string& filepath)
 		type = RES_FILE_IMAGE;
 	} else if (ext == ".json") {
 		type = RES_FILE_JSON;
-	} else if (ext == ".param" || ext == ".obj" || ext == ".m3d" || ext == ".x" || ext == ".xml" || ext == ".mdl" || ext == ".bsp" || ext == ".dae") {
+	} else if (ext == ".param" || ext == ".obj" || ext == ".m3d" || ext == ".x" || ext == ".xml" || ext == ".mdl" || ext == ".bsp" || ext == ".dae" || ext == ".fbx") {
 		type = RES_FILE_MODEL;
 	} else if (ext == ".bin") {
 		type = RES_FILE_BIN;
