@@ -12,7 +12,7 @@ ResFileType ResFileHelper::Type(const std::string& filepath)
 	std::transform(ext.begin(), ext.end(), ext.begin(), tolower);
 	if (ext == ".png" || ext == ".jpg" || ext == ".bmp" || ext == ".ppm" || ext == ".pvr" || ext == ".pkm" || ext == ".dds") {
 		type = RES_FILE_IMAGE;
-	} else if (ext == ".raw3d") {
+	} else if (ext == ".raw3d" || ext == ".vdb") {
 		type = RES_FILE_IMAGE3D;
 	} else if (ext == ".json") {
 		type = RES_FILE_JSON;
