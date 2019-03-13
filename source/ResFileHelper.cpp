@@ -23,6 +23,12 @@ ResFileType ResFileHelper::Type(const std::string& filepath)
 	} else if (ext == ".lua") {
 		type = RES_FILE_SCRIPT;
 	}
+    // shader
+    else if (ext == ".shader") {
+        type = RES_FILE_SHADER;
+    } else if (ext == ".asset") {
+        type = RES_FILE_ASSET;
+    }
 	// quake
 	else if (ext == ".wad") {
 		type = RES_FILE_WAD;
