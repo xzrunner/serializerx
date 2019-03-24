@@ -10,7 +10,7 @@ ResFileType ResFileHelper::Type(const std::string& filepath)
 	ResFileType type = RES_FILE_UNKNOWN;
 	auto ext = boost::filesystem::extension(filepath);
 	std::transform(ext.begin(), ext.end(), ext.begin(), tolower);
-	if (ext == ".png" || ext == ".jpg" || ext == ".bmp" || ext == ".ppm" || ext == ".pvr" || ext == ".pkm" || ext == ".dds") {
+	if (ext == ".png" || ext == ".jpg" || ext == ".bmp" || ext == ".ppm" || ext == ".pvr" || ext == ".pkm" || ext == ".dds" || ext == ".hdr") {
 		type = RES_FILE_IMAGE;
 	} else if (ext == ".raw3d" || ext == ".vdb") {
 		type = RES_FILE_IMAGE3D;
