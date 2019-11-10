@@ -29,6 +29,13 @@ ResFileType ResFileHelper::Type(const std::string& filepath)
     } else if (ext == ".asset") {
         type = RES_FILE_ASSET;
     }
+    // script
+    else if (ext == ".py") {
+        type = RES_FILE_PYTHON;
+    }
+    else if (ext == ".lua") {
+        type = RES_FILE_LUA;
+    }
 	// quake
 	else if (ext == ".wad") {
 		type = RES_FILE_WAD;

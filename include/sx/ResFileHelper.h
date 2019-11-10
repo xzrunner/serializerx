@@ -19,6 +19,10 @@ enum ResFileType
     RES_FILE_SHADER,
     RES_FILE_ASSET,
 
+    // script
+    RES_FILE_PYTHON,
+    RES_FILE_LUA,
+
 	// quake
 	RES_FILE_WAD = 1024,
 	RES_FILE_MAP,
